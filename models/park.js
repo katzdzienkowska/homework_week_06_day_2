@@ -40,7 +40,7 @@ Park.prototype.totalVisitorsPerDay = function () {
     return total;
 };
 
-Park.prototype.totalVisitorsPerYear = function (dinosaur) {
+Park.prototype.totalVisitorsPerYear = function () {
     let total = this.totalVisitorsPerDay() * 365;
     return total;
 };
