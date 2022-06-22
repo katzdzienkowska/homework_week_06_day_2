@@ -9,7 +9,8 @@ Park.prototype.addDinosaur = function (dinosaur) {
 };
 
 Park.prototype.removeDinosaur = function (dinosaur) {
-    this.collectionOfDinosaurs.pop(dinosaur);
+    const index = this.collectionOfDinosaurs.indexOf(dinosaur);
+    this.collectionOfDinosaurs.splice(index, 1);
 };
 
 Park.prototype.dinosaurWithMostVisitors = function () {
